@@ -1,0 +1,421 @@
+/* GERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Slab', Helvetica, Arial, sans-serif;
+    color: #2c3e50;
+}
+
+.anima {
+    opacity: 0;
+    transform: translate3d(-100px,0,0);
+    transition: .3s;
+}
+.anima-start {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+h1::after {
+    content: '';
+    width: 200px;
+    height: 2px;
+    background: currentColor;
+    display: block;
+    margin: 30px auto 0;
+}
+
+h2 {
+    padding: .3em;
+    font-size: 36pt;
+}
+h2::after {
+    content: '';
+    width: 100px;
+    height: 2px;
+    background: currentColor;
+    display: block;
+    margin: 20px auto 0;
+}
+
+
+.bg_video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background-image: url(../_video/Save_As.jpg);
+    transition: 1s opacity;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(52, 73, 94,1.0);
+}
+
+nav>a {
+    margin: 10px 0;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.55em;
+    border: 2px solid #fff;
+    padding: 0.4em;
+
+}
+
+nav>a span {
+    font-weight: 300;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul li {
+    text-align: center;
+    width: 100%;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 0.7em 0;
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+nav ul li:hover a {
+    background: rgba(26, 188, 156,1.0)
+}
+
+header {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2em;
+}
+
+header h1 {
+    padding: 1em;
+}
+
+header p {
+    font-weight: 300;
+    line-height: 1.6;
+    max-width: 700px;
+}
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 2em;
+}
+#sobre figure {
+        display: flex;
+        margin: 2.25em;
+    }
+#sobre img {
+        align-self: center;
+        margin: auto;
+    }
+
+#sobre p {
+    font-weight: 300;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+#blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #27bf8e 0%, #039bc4 100%);
+    color: #fff;
+    padding: 1em;
+}
+
+#blog h3 {
+    font-size: 1.5em;
+    font-weight: 300;
+    padding: 0.5em;
+    margin: 1em 0 2em 0;
+}
+
+#blog h3::after {
+    content: '';
+    width: 100px;
+    height: 1px;
+    background: currentColor;
+    display: block;
+    margin: 15px auto 0;
+}
+
+#blog .blocos {
+    margin: 1em;
+}
+
+#blog .blocos article {
+    width: 100%;
+    margin: 3em 1em 3em 0;
+    padding: 0.5em;
+    background-color: #fff;
+    box-shadow: 3px 3px 10px #777;
+}
+
+#blog img {
+    margin-top: 2em;
+}
+
+#blog .blocos h4 {
+    margin: 1em;
+    font-size: 1.5em;
+}
+#blog .blocos h4::after {
+    content: '';
+    width: 100px;
+    height: 1px;
+    background: currentColor;
+    display: block;
+    margin: 15px auto 0;
+}
+#blog .blocos a {
+    color: #a9a9a9;
+    text-decoration: none;
+}
+
+#blog .blocos p {
+    color: #a9a9a9;
+    margin: 0 2em 2em 2em;
+    font-weight: 300;
+    text-align: justify;
+}
+#blog .blocos p small {
+    display: flex;
+    margin: 1em 0;
+}
+
+    .mat {
+        background: #f2f2f2;
+        padding: 2em;
+    }
+    .mat h4 {
+        text-align: left;
+        margin-bottom: 1em; 
+    }
+    .mat .fa {
+        padding: 0.5em;
+    }
+.blog_mat {
+	background: #f5f5f5;
+    padding: 2em;
+    position: relative;
+    margin-bottom: 8em;
+}
+.blog_mat h3 {
+    font-size: 3em;
+    padding: 2em 0 0 0; 
+}
+.blog_mat h4 {
+	font-size: 1em;
+    margin-bottom: 2em;
+}
+.blog_mat img{
+    position: absolute;
+    top: -100px;
+    right: 30px;
+}
+.blog_mat small{
+    text-align: right;
+    padding: 1em;
+    display: block;
+}
+.port_img {
+	display: flex;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #f5f5f5;
+    max-width: 100%;
+    width: 100%;
+}
+
+form label {
+    width: 100%;
+    padding: 2em;
+}
+form input {
+    width: 100%;
+    padding: 1em;
+    margin: 0.5em;
+}
+form textarea {
+    width: 100%;
+    padding: 1em;
+    margin: 0.5em;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    background: #016580;
+    min-height: 90px;
+    height: 90px;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+    padding: 0.8em;
+}
+
+
+.copy {
+    background: #0b4f61;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 0.75em;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .row_bg{
+        background: rgba(52, 73, 94,1.0);
+    }
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 70px;
+    }
+    nav > a {
+        border: 2px solid #fff;
+        
+    }
+    nav ul {
+        flex-direction: row;
+        width: 70%;
+        padding: 1em 0;
+    }
+    nav ul li a:hover {
+        font-weight: bold;
+        color: #016580;
+        background: rgba(26, 188, 156,1.0);
+        padding: 1.6em 0; 
+    }
+    header {
+        height: 950px;
+        height: 95vh;
+        justify-content: center;
+        padding: 0;
+    }
+    header>h1 {
+        font-size: 5.3125em;
+    }
+    header p {
+        font-size: 1.5em;
+    }
+    #sobre, #blog {
+        padding: 4.375em;
+    }
+    #sobre h2, #blog h2 {
+        text-align: center;
+        padding: 0 0 0.75em 0;
+        font-size: 3.0112500301128em;
+    }
+    #sobre figure {
+        display: flex;
+        margin: 2.25em;
+    }
+    #sobre img {
+        align-self: center;
+        margin: auto;
+    }
+    
+    #blog h3 {
+        padding: 0;
+    }
+    
+    #blog .blocos {
+        display: flex;
+        flex-direction: row;
+    }
+    #blog .blocos article {
+        justify-content: space-between;
+        margin: 150px 15px 0 15px;
+        padding: 5em 0 0 0;
+        position: relative;
+    }
+    #blog .blocos article img {
+        position: absolute;
+        top:-140px;
+        left: 100px;
+    }
+    #blog .blocos article img:last-child{
+        position: absolute;
+        top:-140px;
+        left: 50px;
+    }
+    #blog .blocos article h4 { 
+    }
+    
+    .mat {
+        background: #f2f2f2;
+        padding: 2em;
+    }
+    .mat p {
+        margin-bottom: 1em;
+    }
+
+}

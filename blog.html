@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css" />
+    <title>Fellipe de Palma | Blog</title>
+</head>
+
+<body>
+
+    <div class="row_bg">
+        <div class="container">
+            <nav>
+                <a href="index.html"> <span>F de</span> Palma </a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+     <section id="sobre">
+        <div class="container">
+            <h2 class="anima">BLOG</h2>
+            <article class="blog_mat">
+                <h3 class="anima">Entendendo o Outline do HTML</h3>
+
+                <h4>Entenda porquê não usar tantos H1 e como funciona o fluxo de outline do HTML.</h4>
+
+                <small>04 de Junho de 2017&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Fellipe de Palma</small>
+
+                <img src="_img/html5.png" alt="Logo HTML 5" />
+
+                <p>O Outline do documento HTML é a estrutura do documento que é gerada pelos títulos, títulos de formulários, títulos das tabelas e qualquer outro elemento que marque alguma seção de conteúdo no documento. Essas marcações de Outline podem ser usadas para várias iniciativas, por exemplo, um browser ou alguma outra interface possa criar uma Tabela de Conteúdo. Outras tecnologias assistivas podem usar também estas seções para formar a navegação, como em um leitor de tela, mas ou menos como acontece no WAI-ARIA, mas de maneira mais natural.</p>
+                <p>Os elementos de cabeçalho h1-h6, contribuem para o outline do documento HTML 5, criando uma estrutura hierárquica e definindo as seções da página. Os cabeçalhos são importantes para otimização de buscas e também para navegação em leitores de telas, já que usuários desses aparelhos navegam pelos títulos na página.</p>
+                <p>Nas versões HTML4 e XHTML tudo o que tinhamos para estruturar o outline eram as tags h1-h6. Tínhamos então o seguinte código:</p>
+                <!--<pre>  
+<code>
+              <body>
+              <h1>Midias reprodutiveis</h1>
+              <h2>Disco</h2>
+              <h2>Arquivo</h2>
+              <h3>Video: Avi, Divx, Mp4, Xvid</h3>
+              <h2>Disco USB de armazenamento</h2>
+              </body>
+        </code>
+        </pre>-->
+                <p>E sua saída era:</p>
+                <pre>
+            1. Midias reprodutiveis
+              1. Disco
+              2. Arquivo
+                 1. Video: AVI, DIVx, MP4, Xvid
+              3. Disco USB de armazenamento
+        </pre>
+                <p>Browsers comuns não mostram o outline do documento portanto para visualiza-los é necessário usar uma ferramenta chamada HTML5 outliner(https://gsnedders.html5.org/outliner/). Mesmo que o nível dos cabeçalhos dos exemplos sejam diferentes, a saída como vimos é a mesma.
+                </p>
+                <p>Pois bem, agora com o HTML5 temos novas formas de estruturar o documento. Temos os elementos de sectioning content — article, aside, nav e sections — que demarcam diferentes seções num documento e define o escopo para os elementos de cabeçalho (assim como o header e o footer).</p>
+            </article>
+
+            <article class="blog_mat">
+                <h3>Afinal, como usar herança no CSS?</h3>
+                 <small>04 de Junho de 2017&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Fellipe de Palma</small>
+                <img src="_img/css3.png" alt="Logo CSS 3" />
+                
+                <p>Herança surgiu para ajudar desenvolvedores a escreverem mesmo e produzirem mais. Vamos ver aqui como esse conceito básico das folhas de estilo pode nos ajudar no dia-a-dia. Geralmente quando alguém começa a desenvolver interfaces web, o processo é aos trancos e barrancos. Nessa situação, iniciantes buscam aprender como se faz aquela borda arredondada ou como aplicar transparência. Por fim, acabam deixando de lado conceitos básicos de CSS. Levando isso em conta, precisamos primeiramente aprender sobre especificidade e efeito cascata.</p>
+                
+                <p>Herança surgiu para ajudar desenvolvedores a escreverem mesmo e produzirem mais. Vamos ver aqui como esse conceito básico das folhas de estilo pode nos ajudar no dia-a-dia.</p>
+                
+                <p>Geralmente quando alguém começa a desenvolver interfaces web, o processo é aos trancos e barrancos. Nessa situação, iniciantes buscam aprender como se faz aquela borda arredondada ou como aplicar transparência. Por fim, acabam deixando de lado conceitos básicos de CSS. Levando isso em conta, precisamos primeiramente aprender sobre especificidade e efeito cascata. Esses dois pontos são essenciais para aprendermos como escrever folhas de estilo usando herança.</p>
+                
+                </article>
+                
+            <article class="blog_mat">
+                <h3>Como fazer o efeito de dupla exposição no Photoshop</h3>
+                 <small>04 de Junho de 2017&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Fellipe de Palma</small>
+                <img src="_img/logophotoshop.png" alt="Logo Photoshop" />
+                
+                <p>
+                    01. Neste tutorial usaremos apenas duas imagens, a imagem da modelo e a imagem que fará parte da dupla exposição.
+                </p>
+                <p>
+                    02. Pressione Ctrl+O e abra a foto da modelo, pressione a letra P do teclado para selecionar a Pen Tool, certifique-se de que a opção Paths esteja habilitada e crie um path ao redor da modelo.
+                </p>
+                <p>
+                    03. Crie o Path ao redor da modelo, áreas como o cabelo serão trabalhadas posteriormente.
+                </p>
+                <p>
+                    04. Ao terminar o Path clique com o botão direito do mouse dentro do Path criado e escolha a opção Make Selection, defina os valores abaixo e pressione Ok.
+                </p>
+                <p>
+                    05. Vá em Select> Refine Edge e defina os valores abaixo.
+                </p>
+                <p>
+                    06. Pressione Ok, sua seleção deverá ficar como a da foto abaixo, pressione Ctrl+J para duplicar a área selecionada para uma nova layer, pressione Ctrl+Shift+Alt+N para criar uma nova layer, pressione a letra D do teclado para resetar as cores de Foreground e Background para preto e branco, pressiona a letra X do teclado para alternar as cores de Foreground e Background, sua cor de Foreground deve ser a branca, pressione Alt+Backspace (a tecla acima do Enter) para preencher a layer com branco, deixe a layer abaixo da layer copiada.
+                </p>
+                <p>
+                    07. Com a tecla Ctrl pressionada clique sobre a miniatura da layer copiada para ativar a seleção, vá em File> Place e adicione a segunda imagem, ajuste seu tamanho e largura, pressione Enter para finalizar a transformação.
+                </p>
+                <p>
+                    08. Vá em Layer> Layer Mask> Reveal All para adicionar uma máscara na layer, clique sobre o pequeno ícone de corrente que existe entre a miniatura da imagem e a miniatura da máscara para retirar o link entre as duas coisas.
+                </p>
+                <p>
+                    09. Clique na layer da imagem copiada, pressione Ctrl+J para duplicar a layer, deixe a layer acima da layer de textura, pressione Ctrl+Shift+U para retirar a saturação da imagem, pressione Ctrl+L para abrir a caixa de Levels e defina os valores abaixo.
+                </p>
+                <p>
+                    10. Mude o modo de blend da layer para Screen.
+                </p>
+                <p>
+                    11. Vá em Layer> Layer Mask> Reveal All para adicionar uma máscara na layer, pressione a letra D do teclado para resetar as cores de Foreground e Background para preto e branco, pressione a letra B do teclado para selecionar a Brush Tool, escolha um brush de pontas suaves e tamanho médio, aplique no documento como na foto abaixo.
+                </p>
+                <p>
+                    12. Escolha uma cor qualquer para o Background (caso não queira a cor branca), no caso deste tutorial usamos a mesma cor utilizada na textura aplicada.
+                </p>
+                <p>
+                    13. Vá em Layer> Layer Style> Gradient Map, crie um gradiente com as cores #e2d9d1, #52463b e #0e1133, mude o modo de blend do gradiente para Color e aplique.
+                </p>
+                
+            </article>
+        </div>
+    </section>
+    <footer>
+
+        <a href="https://www.facebook.com/DanFellipe"><span class="fa fa-facebook-official" aria-hidden="true"></span></a>
+
+            <a href="https://www.instagram.com/fellipedepalma/"><span class="fa fa-instagram" aria-hidden="true"></span></a>
+
+            <a href="https://github.com/danfellipe/"><span class="fa fa-github" aria-hidden="true"></span></a>
+
+            <a href="https://www.linkedin.com/in/daniel-fellipe-palma-da-silva-7bbb9991/"><span class="fa fa-linkedin-square" aria-hidden="true"></span></a>
+    </footer>
+    <div class="copy">
+        <p>Copyright &copy; 2017 Fellipe de Palma</p>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://use.fontawesome.com/bacfdfee83.js"></script>
+
+</body>
+
+</html>
